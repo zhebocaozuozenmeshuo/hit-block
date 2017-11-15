@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>js 打砖块</title>
+  <style>
+    body {background: rgba(9, 138, 86, 0.671)}
+    canvas {border: 2px #ddd solid;}
+  </style>
+   <!-- gua game 相关文件 -->
+  <script src="guagame/utils.js"></script>
+  <script src="guagame/gua_game.js"></script>
+  <script src="guagame/gua_scene.js"></script>
+    <!-- 场景相关文件   -->
+  <script src="scene/main/paddle.js"></script>
+  <script src="scene/main/ball.js"></script>
+  <script src="scene/main/block.js"></script>
+  <script src="scene/main/scene.js"></script>
+   <!-- 开始 结束场景 -->
+  <script src="scene/end/scene_end.js"></script>
+  <script src="scene/title/scene_title.js"></script>
+   <!-- 关卡数据 -->
+  <script src="level.js"></script>
+</head>
+<body>
+  <canvas id="id-canvas" style="width: 400; height: 300;"></canvas>
+  <hr>
+  <input type="range" id="id-input-speed" value="1">
+  <div class="">
+    <!-- <textarea id="id-text-log" cols="56" rows="20"></textarea> -->
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
